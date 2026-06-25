@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "SN Column Manager",
+  "description": "Manage and apply ServiceNow column profiles.",
+  "version": "1.0.0",
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "*://*/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "SN Column Manager",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

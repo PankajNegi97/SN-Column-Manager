@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SN Column Manager</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>📋 SN Column Manager</h2>
+
+        <div class="section">
+
+            <label>Profile Name</label>
+
+            <input
+                id="profileName"
+                type="text"
+                placeholder="Example: Axalta Daily">
+
+        </div>
+
+        <div class="section">
+
+            <label>Paste Excel Columns</label>
+
+            <textarea
+                id="columns"
+                placeholder="Number
+Customer Name
+Priority
+Assigned to"></textarea>
+
+        </div>
+
+        <button id="saveBtn">
+            💾 Save Profile
+        </button>
+
+        <button id="applyBtn">
+            ⚡ Apply Profile
+        </button>
+
+        <button id="currentBtn">
+            ⭐ Save Current View
+        </button>
+
+        <hr>
+
+        <div id="profiles">
+
+            No profiles yet
+
+        </div>
+
+    </div>
+
+<script src="popup.js"></script>
+
+</body>
+
+</html>
